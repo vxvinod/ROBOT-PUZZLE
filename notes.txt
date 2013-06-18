@@ -1,0 +1,48 @@
+Notes
+
+
+* to get character input from command prompt- a = gets.chomp
+
+*get input through parameter 
+#!/usr/bin/ruby
+
+first_number = ARGV[0].to_i
+second_number = ARGV[1].to_i
+
+puts first_number + second_number
+
+and you call it like this
+
+% ./plus.rb 5 6
+==> 11
+
+
+
+
+BAckup code:
+if(@prev_command==1)
+		   	$y=$y+1 if (@command=='1')
+		   	$y=$y-1  if (@command=='2')
+		   	$x=$x-1  if (@command=='3' )
+		 	$x=$x+1 if(@command=='4')
+		 	end
+
+		 	if(@prev_command==4)
+		   	$x=$x+1 if (@command=='1')
+		   	$x=$x-1  if (@command=='2')
+		   	$y=$y+1  if (@command=='3' )
+		 	$y=$y-1 if(@command=='4')
+		 	end
+
+		 	if(@prev_command==3)
+		   	$x=$x-1 if (@command=='1')
+		   	$x=$x+1  if (@command=='2')
+		   	$y=$y-1  if (@command=='3' )
+		 	$y=$y+1 if(@command=='4')
+		 	end
+
+		 	if(@prev_command==2)
+		   	$y=$y-1 if (@command=='1')
+		   	$y=$y+1  if (@command=='2')
+		   	$x=$x+1  if (@command=='3' )
+		 	$x=$x-1 if(@command=='4')
